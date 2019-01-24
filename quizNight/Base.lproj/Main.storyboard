@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="quizNight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="pZK-oK-Y4o">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Rr-YN-82T">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Jg8-Xl-EqJ">
+                                        <rect key="frame" x="67.5" y="50" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="FOn-vF-Jkj"/>
+                                            <constraint firstAttribute="width" constant="240" id="ciX-41-x1I"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEV-Cd-UpL">
+                                        <rect key="frame" x="168" y="188" width="39" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.98039215686274506" green="0.94901960784313721" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQx-Y6-9KO">
+                                        <rect key="frame" x="5" y="303.5" width="365" height="60"/>
+                                        <string key="text">Descubra qual a cidade 
+a partir da foto</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="0.98039215690000003" green="0.94901960780000005" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTH-k7-g7c" customClass="ButtonWithBorder" customModule="quizNight" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="599" width="359" height="60"/>
+                                        <color key="backgroundColor" red="0.16470588235294117" green="0.29019607843137252" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="oTH-k7-g7c" secondAttribute="height" multiplier="359:60" id="SUf-lv-bY0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Play">
+                                            <color key="titleColor" red="0.98039215690000003" green="0.94901960780000005" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Jg8-Xl-EqJ" firstAttribute="centerX" secondItem="0Rr-YN-82T" secondAttribute="centerX" id="8Rd-Mj-hJ5"/>
+                                    <constraint firstAttribute="trailing" secondItem="BQx-Y6-9KO" secondAttribute="trailing" constant="5" id="EWl-yz-gbA"/>
+                                    <constraint firstItem="BQx-Y6-9KO" firstAttribute="centerX" secondItem="0Rr-YN-82T" secondAttribute="centerX" id="GT6-Ti-7Jn"/>
+                                    <constraint firstItem="pEV-Cd-UpL" firstAttribute="top" secondItem="Jg8-Xl-EqJ" secondAttribute="bottom" constant="10" id="Jub-sJ-jk6"/>
+                                    <constraint firstItem="Jg8-Xl-EqJ" firstAttribute="top" secondItem="0Rr-YN-82T" secondAttribute="top" constant="50" id="N5c-F4-als"/>
+                                    <constraint firstAttribute="trailing" secondItem="oTH-k7-g7c" secondAttribute="trailing" constant="8" id="QWY-7K-tyi"/>
+                                    <constraint firstAttribute="bottom" secondItem="oTH-k7-g7c" secondAttribute="bottom" constant="8" id="aKd-Ir-aoE"/>
+                                    <constraint firstItem="BQx-Y6-9KO" firstAttribute="leading" secondItem="0Rr-YN-82T" secondAttribute="leading" constant="5" id="aXf-GZ-jUx"/>
+                                    <constraint firstItem="pEV-Cd-UpL" firstAttribute="centerX" secondItem="0Rr-YN-82T" secondAttribute="centerX" id="avV-50-hvl"/>
+                                    <constraint firstItem="oTH-k7-g7c" firstAttribute="leading" secondItem="0Rr-YN-82T" secondAttribute="leading" constant="8" id="fID-SN-OwF"/>
+                                    <constraint firstItem="BQx-Y6-9KO" firstAttribute="centerY" secondItem="0Rr-YN-82T" secondAttribute="centerY" id="g0g-aH-R7E"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pZK-oK-Y4o" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="7RZ-8O-8AJ"/>
+                            <constraint firstItem="0Rr-YN-82T" firstAttribute="height" secondItem="pZK-oK-Y4o" secondAttribute="height" id="7hC-HK-SMZ"/>
+                            <constraint firstItem="0Rr-YN-82T" firstAttribute="centerX" secondItem="pZK-oK-Y4o" secondAttribute="centerX" id="9Uq-M4-f98"/>
+                            <constraint firstItem="0Rr-YN-82T" firstAttribute="width" secondItem="pZK-oK-Y4o" secondAttribute="width" id="FQC-yD-co4"/>
+                            <constraint firstItem="0Rr-YN-82T" firstAttribute="centerY" secondItem="pZK-oK-Y4o" secondAttribute="centerY" id="MCU-l6-ske"/>
+                            <constraint firstItem="pZK-oK-Y4o" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="S8L-Qg-03C"/>
+                            <constraint firstItem="pZK-oK-Y4o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="auZ-Wy-bXO"/>
+                            <constraint firstItem="pZK-oK-Y4o" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tNX-vD-o4z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="quizNightLogo" destination="Jg8-Xl-EqJ" id="APM-zi-6fe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="1024" height="682.5"/>
+        <image name="logo" width="426.5" height="307.5"/>
+    </resources>
+</document>
