@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F5DA14F21F9E51900C735D9 /* ButtonWithBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5DA14E21F9E51900C735D9 /* ButtonWithBorder.swift */; };
+		0F12C3D421FB7418003DC30E /* UITextField+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12C3D221FB7417003DC30E /* UITextField+extensions.swift */; };
+		0F12C3D521FB7418003DC30E /* UIButton+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12C3D321FB7417003DC30E /* UIButton+extensions.swift */; };
+		0F14D62B21FE381C00748951 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F14D62A21FE381C00748951 /* QuestionsViewController.swift */; };
+		0F14D62E21FF385300748951 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F14D62D21FF385200748951 /* EndGameViewController.swift */; };
 		0FB09AEE21F8D5FB00C156E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB09AED21F8D5FB00C156E1 /* AppDelegate.swift */; };
 		0FB09AF021F8D5FB00C156E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB09AEF21F8D5FB00C156E1 /* ViewController.swift */; };
 		0FB09AF321F8D5FB00C156E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FB09AF121F8D5FB00C156E1 /* Main.storyboard */; };
@@ -16,7 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F5DA14E21F9E51900C735D9 /* ButtonWithBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithBorder.swift; sourceTree = "<group>"; };
+		0F12C3D221FB7417003DC30E /* UITextField+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+extensions.swift"; sourceTree = "<group>"; };
+		0F12C3D321FB7417003DC30E /* UIButton+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+extensions.swift"; sourceTree = "<group>"; };
+		0F14D62A21FE381C00748951 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		0F14D62D21FF385200748951 /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
 		0FB09AEA21F8D5FB00C156E1 /* quizNight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quizNight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FB09AED21F8D5FB00C156E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FB09AEF21F8D5FB00C156E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F14D62C21FE383700748951 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0F12C3D321FB7417003DC30E /* UIButton+extensions.swift */,
+				0F12C3D221FB7417003DC30E /* UITextField+extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		0FB09AE121F8D5FB00C156E1 = {
 			isa = PBXGroup;
 			children = (
@@ -59,8 +74,10 @@
 				0FB09AED21F8D5FB00C156E1 /* AppDelegate.swift */,
 				0FB09AEF21F8D5FB00C156E1 /* ViewController.swift */,
 				0FB09AF121F8D5FB00C156E1 /* Main.storyboard */,
-				0F5DA14E21F9E51900C735D9 /* ButtonWithBorder.swift */,
+				0F14D62D21FF385200748951 /* EndGameViewController.swift */,
+				0F14D62A21FE381C00748951 /* QuestionsViewController.swift */,
 				0FB09AF421F8D5FF00C156E1 /* Assets.xcassets */,
+				0F14D62C21FE383700748951 /* Extensions */,
 				0FB09AF621F8D5FF00C156E1 /* LaunchScreen.storyboard */,
 				0FB09AF921F8D5FF00C156E1 /* Info.plist */,
 			);
@@ -139,7 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FB09AF021F8D5FB00C156E1 /* ViewController.swift in Sources */,
-				0F5DA14F21F9E51900C735D9 /* ButtonWithBorder.swift in Sources */,
+				0F14D62B21FE381C00748951 /* QuestionsViewController.swift in Sources */,
+				0F14D62E21FF385300748951 /* EndGameViewController.swift in Sources */,
+				0F12C3D521FB7418003DC30E /* UIButton+extensions.swift in Sources */,
+				0F12C3D421FB7418003DC30E /* UITextField+extensions.swift in Sources */,
 				0FB09AEE21F8D5FB00C156E1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
