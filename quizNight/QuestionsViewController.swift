@@ -86,6 +86,7 @@ class QuestionsViewController: UIViewController {
       score += 1
     } else {
       print("Errou")
+      performSegue(withIdentifier: "teste", sender: self)
     }
     loadQuestions()
   }

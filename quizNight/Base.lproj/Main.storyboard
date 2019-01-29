@@ -312,7 +312,7 @@ a partir da foto</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yj7-H1-oOW" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="860" y="615"/>
+            <point key="canvasLocation" x="966" y="661"/>
         </scene>
         <!--Won or Lost View Controller-->
         <scene sceneID="K1a-lF-z0N">
@@ -365,7 +365,7 @@ a partir da foto</string>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="JrM-qc-IVI"/>
+                                            <segue destination="LMK-5B-QpV" kind="unwind" unwindAction="goBackHomeWithSegue:" id="Olt-a2-Ewj"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -403,6 +403,7 @@ a partir da foto</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0j6-Cp-dFA" sceneMemberID="firstResponder"/>
+                <exit id="LMK-5B-QpV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1768.8" y="132.68365817091455"/>
         </scene>

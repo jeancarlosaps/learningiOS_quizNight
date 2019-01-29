@@ -19,7 +19,9 @@ class ViewController: UIViewController {
     
     quizNightLogo.frame = CGRect(x: view.bounds.width / 2 - quizNightLogo.frame.width / 2, y: 50, width: quizNightLogo.frame.width, height: quizNightLogo.frame.height)
   }
-
-
+  
+  @IBAction func goBackHome(segue: UIStoryboardSegue) {
+    
+  }
 }
 
